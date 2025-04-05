@@ -112,21 +112,21 @@ object pardo {
 // materiales
 
 object cobre {
-  method esbrillante() = true
+  method esBrillante() = true
 }
 
 object vidrio {
-  method esbrillante() = true
+  method esBrillante() = true
 }
 
 object lino {
-  method esbrillante() = false
+  method esBrillante() = false
 }
 
 object madera {
-  method esbrillante() = false
+  method esBrillante() = false
 }
 
 object cuero {
-  method esbrillante() = false
+  method esBrillante() = false
 }

@@ -1,0 +1,36 @@
+import objetos.*
+import personas.*
+import bolichito.*
+
+// test de afirmacion
+test "el rojo es un color fuerte" {
+    assert.that(rojo.esFuerte())
+}
+
+// test de negacion
+test "el celeste no es un color fuerte" {
+    assert.notThat(celeste.esFuerte())
+}
+
+//test de igualdad
+test "puedo modificar el peso del munieco" {
+    munieco.peso(600)
+    assert.equals(600, munieco.peso())
+}
+
+// este test no falla porque cada uno es independiente del anterior
+test "el peso original del munieco es 0" {
+    assert.equals(0, munieco.peso())
+}
+
+test "a Estefania le gusta la remera" {
+    assert.that(estefania.leGusta(remera))
+}
+
+test "a Estefania le gusta el munieco" {
+    assert.notThat(estefania.leGusta(munieco))
+}
+
+test "a Luisa le gusta la placa de cobre" {
+    assert.that(luisa.leGusta(placa))
+}
